@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "visualhamster",
+  "version": "${version}",
+  "name": "VisualHamster",
+  "description": "Visual enhancements mod for Minecraft",
+  "authors": [
+    "VisualHamster Team"
+  ],
+  "contact": {
+    "homepage": "https://github.com/visualhamster",
+    "sources": "https://github.com/visualhamster"
+  },
+  "license": "MIT",
+  "icon": "assets/visualhamster/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.visualhamster.VisualHamster"
+    ],
+    "client": [
+      "com.visualhamster.VisualHamsterClient"
+    ]
+  },
+  "mixins": [
+    "visualhamster.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
